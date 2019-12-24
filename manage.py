@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+#!/usr/bin/env python
+from __future__ import absolute_import, unicode_literals
+
 import os
 import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'grindcms.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'grindcms.settings.dev')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
